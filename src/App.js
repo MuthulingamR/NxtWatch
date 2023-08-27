@@ -24,7 +24,6 @@ const activeMenuConstants = {
   savedVideos: 'SAVED_VIDEOS',
 }
 
-// Replace your code here
 class App extends Component {
   state = {
     isDarkTheme: false,
@@ -73,6 +72,7 @@ class App extends Component {
 
   render() {
     const {isDarkTheme, activeMenu, save, savedVideosList} = this.state
+    document.title = 'Nxt Watch'
 
     return (
       <ThemeContext.Provider
